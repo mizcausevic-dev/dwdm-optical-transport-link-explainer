@@ -1,0 +1,110 @@
+{
+  "id": "p72",
+  "title": "DWDM Optical Transport Link",
+  "category": "Telecommunications",
+  "silhouette": "flow",
+  "slowMotion": false,
+  "falseColor": false,
+  "nodes": [
+    {
+      "id": "n1",
+      "glyph": "mux",
+      "label": "Channels",
+      "role": "path",
+      "x": 0.12,
+      "y": 0.5
+    },
+    {
+      "id": "n2",
+      "glyph": "wavelength",
+      "label": "Wavelengths",
+      "role": "path",
+      "x": 0.5,
+      "y": 0.5
+    },
+    {
+      "id": "n3",
+      "glyph": "fiber",
+      "label": "Fiber",
+      "role": "path",
+      "x": 0.88,
+      "y": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "from": "n1",
+      "to": "n2",
+      "role": "path",
+      "start": 150,
+      "end": 1019
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "role": "path",
+      "start": 300,
+      "end": 1019
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "role": "path",
+      "start": 510,
+      "end": 1019
+    }
+  ],
+  "emphasis": [
+    [
+      "n1"
+    ],
+    [
+      "n2"
+    ],
+    [
+      "n3"
+    ],
+    [
+      "n1",
+      "n2",
+      "n3"
+    ],
+    [
+      "n1",
+      "n2",
+      "n3"
+    ]
+  ],
+  "stages": [
+    {
+      "f0": 0,
+      "f1": 149,
+      "action": "Reveal channels",
+      "detail": "Establish the full assembly, then make a measured three-quarter push toward the active region."
+    },
+    {
+      "f0": 150,
+      "f1": 299,
+      "action": "Multiplex wavelengths",
+      "detail": "Use a sectional close-up and identify only the components required for this mechanism."
+    },
+    {
+      "f0": 300,
+      "f1": 509,
+      "action": "Share fiber",
+      "detail": "Track the primary causal pathway, keeping inputs, outputs, and control overlays distinct."
+    },
+    {
+      "f0": 510,
+      "f1": 749,
+      "action": "Demultiplex",
+      "detail": "Follow the resulting response with readable labels and a separate qualitative inset if useful."
+    },
+    {
+      "f0": 750,
+      "f1": 1019,
+      "action": "Show budget",
+      "detail": "Pull back to a stable system overview; retain visible losses, limits, or uncertainty where relevant."
+    }
+  ]
+}
