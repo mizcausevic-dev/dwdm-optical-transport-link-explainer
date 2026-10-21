@@ -4,6 +4,8 @@
 
 Live plate: https://mizcausevic-dev.github.io/dwdm-optical-transport-link-explainer/
 
+Repository: https://github.com/mizcausevic-dev/dwdm-optical-transport-link-explainer
+
 ## What this is
 
 An interactive anatomy plate for DWDM Optical Transport Link. Play, scrub, or jump the five stages. The same frame always draws the same picture.
